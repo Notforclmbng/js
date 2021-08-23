@@ -1,0 +1,105 @@
+* {
+    margin: 0; 
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    max-width: 1440px;
+    padding: 0 20px;
+    margin: 0 auto;
+}
+
+.button {
+    border: none;
+}
+
+.header {
+    background-color: darkgray;
+
+    &__content {
+        display: flex;
+        justify-content: flex-end;
+        padding: 16px;
+    }
+}
+
+.cart-button {
+    padding: 10px 20px;
+    background-color: rgb(68, 68, 68);
+    color: #fff;
+    border-radius: 16px;
+    border: 1px solid rgb(68, 68, 68);
+
+    &:hover {
+        border: 1px solid black;
+        box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+        background-color: rgb(102, 102, 102);
+    }
+}
+
+.goods {
+    
+    &__list {
+    padding: 48px 0 96px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    }
+
+    &__item {
+        width: 300px;
+        margin: 20px;
+        background-color: rgba(226, 226, 226, 0.507);
+        border-radius: 10px;
+
+        &:hover {
+            box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+        }
+    }
+
+    &__image {
+        width: inherit;
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+
+    }
+
+    &__cardContent {
+        padding: 16px;
+    }
+
+    &__name {
+        margin-bottom: 12px;
+    }
+
+    &__price {
+        // color: red;
+        margin-bottom: 48px;
+
+        &::before {
+            content: "Price: ";
+            color: black;
+            font-weight: bold;
+        }
+
+        &::after {
+            content: "$"
+        }
+    }
+
+    &__btn {
+        width: 100%;
+        padding: 10px;
+        border: 1px solid black;
+        border-radius: 4px;
+        margin-bottom: 16px;
+
+        &:hover {
+            color: #fff;
+            background-color: rgb(102, 102, 102);
+            box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+        }
+
+    }
+}
